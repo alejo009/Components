@@ -1,0 +1,100 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+    
+}
+
+/**GlOBALES**/
+
+a{
+    text-decoration: none;
+    background-color: hsl(158, 36%, 37%);
+    border-radius:7px;
+    
+}
+
+
+.container{
+    margin:50px auto;
+    width: 600px;
+    
+}
+.grid-layout{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.grid-layout img{
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius:7px;
+    border-bottom-left-radius:7px;
+
+}
+
+.information-product{
+    padding: 35px;
+}
+
+.perfume{
+
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+.nombre-producto{
+    letter-spacing: 0;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+
+.description-producto{
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 20px;
+}
+
+.precio{
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+.precio-descuento{
+    font-size: 10px;
+    font-family: "Fraunces", serif;
+    color: hsl(228, 12%, 48%);
+    margin-left: 20px;
+    margin-bottom: 70px;
+}
+svg{
+    color: black;
+}
+.add-to-cart{
+    display: inline-block;
+    margin-top: 30px;
+    width: 230px;
+    padding: 12px 70px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    align-items: center;
+    
+}
+
